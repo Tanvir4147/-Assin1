@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800 text-black">
+    <section class="max-w-md min-h-screen  mx-auto p-6  bg-slate-200 ">
+        <header>
+            <nav class="flex justify-around items-center">
+                <img src="./assets/Group.png" alt="">
+                <div class="text-black">
+                    <h1 class="text-2xl font-bold">$<span id="min-balance">4500</span>
+                    </h1>
+                    <p class=" font-bold">Available Balance</p>
+                </div>
+            <button class="border-2 border-indigo-600 px-4 text-black">log-out</button>
+            </nav>
+          </header>
+          <div class="p-4 space-y-2">
+            <h1 class="text-2xl font-bold">🔥Welcome to Payooo!</h1>
+            <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+          </div> 
+          <div  class="cards grid  grid-cols-3 mt-6 gap-4">
+            <div id="add-money-box" class="box  border border-black p-4 text-center rounded-md">
+              <img  class="w-8 mx-auto"src="./assets/purse1.png" alt="">
+              <h2>Add Money</h2>
+            </div>
+            <div id="Cashout-box" class="box  border border-black p-4  text-center rounded-md">
+              <img class="w-8 mx-auto" src="./assets/send1.png" alt="">
+              <h2>Cashout</h2>
+            </div>
+            <div class="box  border border-black p-4 text-center rounded-md">
+              <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
+              <h2>Transfer Money</h2>
+            </div>
+            <div class="box  border border-black p-4 text-center rounded-md">
+              <img  class="w-8 mx-auto"src="./assets/transaction1.png" alt="">
+              <h2>Transactions</h2>
+            </div>
+            <div class="box border border-black p-4 text-center rounded-md">
+              <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
+              <h2>Pay Bill</h2>
+            </div>
+            <div class="box  border border-black p-4 text-center rounded-md">
+              <img class="w-8 mx-auto"src="./assets/bonus1.png" alt="">
+              <h2>Get Bonus</h2>
+            </div>
+          </div>
+          <section id="Add-money">
+            <h1 class="text-2xl mt-6">Add Momey</h1>
+            <div class="relative">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-slate-200 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div class="card-body">
+                    <form action="">
+                    <fieldset class="fieldset space-y-3">
+                      <label class="fieldset-label font-bold text-black">Select bank</label>
+                      <select class="select select-bordered w-full max-w-xs bg-slate-100">
+                        <option disabled selected>Bkash</option>
+                        <option>Nagad</option>
+                        <option>DSB</option>
+                      </select>
+                       <label class="fieldset-label font-bold text-black">Acount number</label>
+                       <br>
+                      <input id="Account-input" type="number" value="10312347191" required class="input bg-slate-100 text-black w-full" placeholder="type Acount number"/>
+                      <br>
+                       <label class="fieldset-label font-bold text-black">Amount</label>
+                       <br>
+                      <input id="amount" type="text"  required class="input bg-slate-100 text-black w-full" placeholder="type Acount number"/>
+                      <br>
+                      <label class="fieldset-label font-bold text-black">PIN</label>
+                      <br>
+                      <input id="PIN" type="text" required class="input bg-slate-100 text-black w-full" placeholder="type your PIN" />
+                      <div><a class="link link-hover text-black">Forgot password?</a></div>
+                      <button id="Add-money" class=" btn mt-4 w-full bg-blue-700">Add Money</button>
+                    </fieldset>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </section>
+        
+          <section id="Cashout">
+            <h2 class="text-2xl font-bold mt-6">Cashout</h2>
+            <div class="relative">
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-slate-200 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div class="card-body">
+                    <form action="">
+                    <fieldset class="fieldset space-y-3">
+                       <label class="fieldset-label font-bold text-black">Account Number</label>
+                       <br>
+                      <input id="Account-inputfil" type="number" value="10312347191" required class="input bg-slate-100 text-black w-full" placeholder="type Acount number"/>
+                      <br>
+
+                      
+                      <label class="fieldset-label font-bold text-black">Amount</label>
+                      <br>
+                      <input id="Amount" type="text" required class="input bg-slate-100 text-black w-full" placeholder="type your Amount" />
+                      <label class="fieldset-label font-bold text-black">PIN</label>
+                      <br>
+                      <input id="PIN-Num" type="text" required class="input bg-slate-100 text-black w-full" placeholder="type your PIN" />
+                      <div><a class="link link-hover text-black">Forgot password?</a></div>
+                      <button id="Cashout-button" class="btn btn-neutral mt-4 w-full text-lg">Cashout</button>
+                    </fieldset>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            
+          </section>  
+    </section>
+    <script src="/utilities/utilities.js"></script>
+    <script src="Add-Money.js"></script>
+</body>
+</html>
